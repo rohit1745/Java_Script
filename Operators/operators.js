@@ -43,17 +43,49 @@ console.log('==================================================');
 //=====Logical Operator=======
 
 
-var prasad , rohit;
-console.log(10 && 50);
-console.log('rohit' && 'prasad');
+let name='Rohit'
+let isLogginIn= true
+let isPaid = false
+
+if(isLogginIn && isPaid)
+{
+    console.log('Access to all content');
+    
+}
+else
+{
+    console.log('Access olny limited content');
+    
+}
 
 
-
+console.log('==================================================');
 //=====Unary Operator=======
+let z=100
+console.log(z++);
+console.log(z--);
+console.log(typeof z);
+console.log(! z++);
 
 
 
 
+console.log('==================================================');
+//=====Tarnary Operator=======
 
 
+let age=18;
+let goVot=(age<=10) ? "true" : "false"
+console.log(goVot);
+
+
+console.log('==================================================');
+
+//=====String Concatination =======
+let FName = "Rohit"
+let LName = "Badgujar"
+console.log(FName + " " + LName);
+
+let s = `Hello ${FName} ${LName} Welcome to the Nashik City`;
+console.log(s);
 
