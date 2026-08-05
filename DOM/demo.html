@@ -8,6 +8,22 @@
 <body>
     <h1 id="heading">Hello Its is a Dom Prac page</h1>
     <p class="paragraph">Hii, My Name is Rohit </p>
+
+
+    <div>
+        <h2 id="heading">Hello wellcome to Nashik</h1>
+        <p class="paragraph">Hello, My Name is RB </p>
+
+    </div>
+        
+        <ul class="list">
+
+            <li>java</li>
+            <li>python</li>
+            <li>c++</li>
+            <li>ML</li>
+        </ul>
+   
     <button id="btn">Click me</button>
 
 
@@ -16,11 +32,26 @@
         const heading = document.getElementById("heading")
         console.log(heading.innerText);
 
-        const paragraph = document.getElementsByClassName("paragraph")[0]
-        console.log(paragraph.innerText);  //[0] becaude class is give object form 
+        const paragraph = document.getElementsByClassName("paragraph")
+       //single para used===> cnsole.log(paragraph.innerText);  //[0] becaude class is give object form 
+        console.log(paragraph.length);
+         console.log(paragraph[0].innerHTML);
+        console.log(paragraph[1].innerHTML);
         
+
         const btn = document.getElementById("btn")
         console.log(btn.innerText);
+
+
+        //select all list iteam using tag name
+        const listItem = document.getElementsByTagName("li")
+        for(let items of listItem)
+    {
+        console.log(items.textContent);
+        
+    }
+
+
 
     </script>
 </body>
