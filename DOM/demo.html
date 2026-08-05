@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello Its is a Dom Prac page</h1>
+    <p class="paragraph">Hii, My Name is Rohit </p>
+    <button id="btn">Click me</button>
+
+
+    <script>
+
+        const heading = document.getElementById("heading")
+        console.log(heading.innerText);
+
+        const paragraph = document.getElementsByClassName("paragraph")[0]
+        console.log(paragraph.innerText);  //[0] becaude class is give object form 
+        
+        const btn = document.getElementById("btn")
+        console.log(btn.innerText);
+
+    </script>
+</body>
+</html>
