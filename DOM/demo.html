@@ -6,8 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="heading">Hello Its is a Dom Prac page</h1>
+    <h1 id="heading">Hello Its is a DOM Prac page</h1>
     <p class="paragraph">Hii, My Name is Rohit </p>
+
+    
+    <p class="desc">Hii, My Name is RB </p>
+    <p class="desc">Hello, My Name is RB </p>
+
+
 
 
     <div>
@@ -51,6 +57,19 @@
         
     }
 
+
+
+    //query selector
+    const des = document.querySelectorAll(".desc")
+    //console.log(des);         // particular query selector
+    
+    des.forEach((p,index) => {  //all p tag query selector
+
+        console.log(p.innerText);
+        
+        
+    });
+ 
 
 
     </script>
